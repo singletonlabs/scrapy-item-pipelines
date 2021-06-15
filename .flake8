@@ -1,0 +1,6 @@
+[flake8]
+select = BLK,C,E,F,I,W
+ignore = E203,W503
+max-complexity = 10
+max-line-length = 88
+application-import-names = scrapy_item_pipelines,tests
