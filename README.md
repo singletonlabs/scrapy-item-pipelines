@@ -9,10 +9,12 @@ Item pipeline to push items to kafka. Items will be converted into JSON format a
 
 ### Settings
 
+```
 SL_SCRAPY_ITEM_PIPELINES_SETTINGS = {
     "push_to_kafka_hosts": "localhost:9092"  # Kafka broker hosts. Separated with a comma.
     "push_to_kafka_default_topic": ""  # kafka default topic.
 }
+```
 
 
 ### Usage
