@@ -1,0 +1,30 @@
+[build-system]
+requires = ["flit_core >=2,<4"]
+build-backend = "flit_core.buildapi"
+
+[tool.flit.metadata]
+module = "scrapy_item_pipelines"
+author = "Kasun Herath"
+author-email = "kasunh01@gmail.com"
+home-page = "https://github.com/singletonlabs/scrapy-item-pipelines"
+description-file = "README.md"
+requires = [
+    "confluent-kafka",
+]
+dist-name = "scrapy-item-pipelines"
+requires-python = ">=3.6"
+keywords = "scrapy,pipelines"
+classifiers = [
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Framework :: Scrapy",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: Implementation :: CPython",
+]
+
+[tool.flit.metadata.requires-extra]
+dev = [
+    "flake8"
+]
