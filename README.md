@@ -2,6 +2,10 @@
 
 Various scrapy item pipelines
 
+## Installation
+
+pip install scrapy-item-pipelines
+
 ## SaveToKafkaPipeline
 
 Item pipeline to push items to kafka. Items will be converted into JSON format and pushed to a defined kafka topic.
