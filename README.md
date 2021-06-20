@@ -54,7 +54,7 @@ Item pipeline to filter out duplicate items calculated using defined keys in the
 
 Define an attribute called unique_key in the item. If the unique key is a single field
 unique_key can be defined as a string or if the unique key is a multi field key unique_key
-should be a tuple of strings. If no unique_key is defined filtering will be done `id` field.
+should be a tuple of strings. If no unique_key is defined filtering will be done using `id` field.
 If you want to skip duplicate filtering for an item define unique_key as None.
 
 The pipeline will include a stats called `duplicate_item_count` which is the number
