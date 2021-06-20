@@ -88,3 +88,14 @@ class DemoItem(scrapy.Item):
 
     unique_key = ("field1", "field2")  # Duplicates will be filtered using both field1 and field2
 ```
+
+Add `scrapy_item_pipelines.misc.FilterDuplicatesPipeline` to the ITEM_PIPELINES setting.
+
+
+```
+ITEM_PIPELINES = {
+    ...
+    ...
+    "scrapy_item_pipelines.misc.FilterDuplicatesPipeline": 500,
+}
+```
